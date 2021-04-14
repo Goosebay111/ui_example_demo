@@ -55,7 +55,6 @@ class ThumbEffect extends Effect {
 class MusicThumb extends NeumorphicObject {
   MusicThumb()
       : super(
-          child: null,
           isThumb: true,
           effect: ThumbEffect(),
         );
