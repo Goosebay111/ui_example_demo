@@ -56,7 +56,6 @@ class MusicImage extends NeumorphicObject {
   MusicImage()
       : super(
           image: 'assets/lowlife.jpg',
-          isThumb: false,
           effect: ImageEffect(),
         );
 }

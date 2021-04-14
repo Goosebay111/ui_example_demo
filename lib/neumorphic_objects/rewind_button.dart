@@ -60,7 +60,6 @@ class RewindButton extends NeumorphicObject {
             color: Color(0xff85878A),
             size: 28.0,
           ),
-          isThumb: false,
           effect: RewindEffect(),
         );
 }

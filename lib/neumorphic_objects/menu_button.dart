@@ -60,7 +60,6 @@ class MenuButton extends NeumorphicObject {
             color: Color(0xff818487),
             size: 19.0,
           ),
-          isThumb: false,
           effect: MenuEffect(),
         );
 }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class NeumorphicObject extends StatelessWidget {
   NeumorphicObject(
-      {this.image, this.child, required this.effect, this.isThumb});
+      {this.image, this.child, required this.effect, this.isThumb = false});
 
   final String? image;
   final Widget? child;

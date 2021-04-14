@@ -61,7 +61,6 @@ class HistoryButton extends NeumorphicObject {
             color: Color(0xff818487),
             size: 13.0,
           ),
-          isThumb: false,
           effect: HistoryEffect(),
         );
 }

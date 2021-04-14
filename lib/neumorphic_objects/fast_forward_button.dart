@@ -61,7 +61,6 @@ class ForwardButton extends NeumorphicObject {
             color: Color(0xff85878A),
             size: 25.0,
           ),
-          isThumb: false,
           effect: ForwardEffect(),
         );
 }

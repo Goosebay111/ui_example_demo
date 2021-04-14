@@ -60,7 +60,6 @@ class PlayButton extends NeumorphicObject {
             color: Color(0xffFFFFFF),
             size: 25.0,
           ),
-          isThumb: false,
           effect: PlayEffect(),
         );
 }
