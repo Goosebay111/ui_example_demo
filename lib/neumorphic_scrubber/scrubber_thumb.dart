@@ -3,7 +3,7 @@ import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-class ThumbAttributes extends ShapeAttributes {
+class ThumbAttributes extends ShapeEffect {
   ThumbAttributes()
       : super(
           diameter: 30.0,
@@ -23,7 +23,7 @@ class ThumbSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class ThumbShadowEffect extends Shadowing {
+class ThumbShadowEffect extends ShadowEffect {
   ThumbShadowEffect()
       : super(
           shadows: [
@@ -46,8 +46,8 @@ class ThumbShadowEffect extends Shadowing {
 class ThumbEffect extends Effect {
   ThumbEffect()
       : super(
-          shapeProperties: ThumbAttributes(),
-          surfaceEffects: ThumbSurfaceEffect(),
+          shapeEffect: ThumbAttributes(),
+          surfaceEffect: ThumbSurfaceEffect(),
           shadowEffect: ThumbShadowEffect(),
         );
 }

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder/neumorphic_builder.dart';
 
-class MenuAttributes extends ShapeAttributes {
+class MenuAttributes extends ShapeEffect {
   MenuAttributes()
       : super(
           diameter: 45.0,
@@ -24,7 +24,7 @@ class MenuSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class MenuShadowEffect extends Shadowing {
+class MenuShadowEffect extends ShadowEffect {
   MenuShadowEffect()
       : super(
           shadows: [
@@ -47,8 +47,8 @@ class MenuShadowEffect extends Shadowing {
 class MenuEffect extends Effect {
   MenuEffect()
       : super(
-          shapeProperties: MenuAttributes(),
-          surfaceEffects: MenuSurfaceEffect(),
+          shapeEffect: MenuAttributes(),
+          surfaceEffect: MenuSurfaceEffect(),
           shadowEffect: MenuShadowEffect(),
         );
 }

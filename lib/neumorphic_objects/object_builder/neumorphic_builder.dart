@@ -9,9 +9,13 @@ class NeumorphicBuilder extends StatelessWidget {
   NeumorphicBuilder(
       {required this.effect, this.child, this.image, this.isThumb = false});
 
+  @protected
   final Effect effect;
+  @protected
   final Widget? child;
+  @protected
   final AssetImage? image;
+  @protected
   final bool? isThumb;
 
   @override

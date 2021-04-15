@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder/neumorphic_builder.dart';
 
-class RewindAttributes extends ShapeAttributes {
+class RewindAttributes extends ShapeEffect {
   RewindAttributes()
       : super(
           diameter: 80.0,
@@ -24,7 +24,7 @@ class RewindSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class RewindShadowEffect extends Shadowing {
+class RewindShadowEffect extends ShadowEffect {
   RewindShadowEffect()
       : super(
           shadows: [
@@ -47,8 +47,8 @@ class RewindShadowEffect extends Shadowing {
 class RewindEffect extends Effect {
   RewindEffect()
       : super(
-          shapeProperties: RewindAttributes(),
-          surfaceEffects: RewindSurfaceEffect(),
+          shapeEffect: RewindAttributes(),
+          surfaceEffect: RewindSurfaceEffect(),
           shadowEffect: RewindShadowEffect(),
         );
 }

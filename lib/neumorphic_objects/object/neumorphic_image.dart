@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder/neumorphic_builder.dart';
 
-class ImageAttributes extends ShapeAttributes {
+class ImageAttributes extends ShapeEffect {
   ImageAttributes()
       : super(
           diameter: 300,
@@ -24,7 +24,7 @@ class ImageSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class ImageShadowEffect extends Shadowing {
+class ImageShadowEffect extends ShadowEffect {
   ImageShadowEffect()
       : super(
           shadows: [
@@ -47,8 +47,8 @@ class ImageShadowEffect extends Shadowing {
 class ImageEffect extends Effect {
   ImageEffect()
       : super(
-          shapeProperties: ImageAttributes(),
-          surfaceEffects: ImageSurfaceEffect(),
+          shapeEffect: ImageAttributes(),
+          surfaceEffect: ImageSurfaceEffect(),
           shadowEffect: ImageShadowEffect(),
         );
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Shadowing {
-  Shadowing({required this.shadows});
+class ShadowEffect {
+  ShadowEffect({required this.shadows});
 
   final List<Shadow> shadows;
 

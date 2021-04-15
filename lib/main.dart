@@ -17,13 +17,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Home(),
+        body: MusicPlayer(),
       ),
     );
   }
 }
 
-class Home extends StatelessWidget {
+class MusicPlayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../object_builder/neumorphic_builder.dart';
 
-class ForwardAttributes extends ShapeAttributes {
-  ForwardAttributes()
+class FastForwardAttributes extends ShapeEffect {
+  FastForwardAttributes()
       : super(
           diameter: 80.0,
           borderWidth: 4.0,
@@ -13,8 +13,8 @@ class ForwardAttributes extends ShapeAttributes {
         );
 }
 
-class ForwardSurfaceEffect extends SurfaceEffect {
-  ForwardSurfaceEffect()
+class FastForwardSurfaceEffect extends SurfaceEffect {
+  FastForwardSurfaceEffect()
       : super(
           lightSideColor: Color(0xff222429).withOpacity(1.0),
           darkSideColor: Color(0xff2F3238).withOpacity(1.0),
@@ -24,8 +24,8 @@ class ForwardSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class ForwardShadowEffect extends Shadowing {
-  ForwardShadowEffect()
+class FastForwardShadowEffect extends ShadowEffect {
+  FastForwardShadowEffect()
       : super(
           shadows: [
             Shadow(
@@ -44,24 +44,23 @@ class ForwardShadowEffect extends Shadowing {
         );
 }
 
-class ForwardEffect extends Effect {
-  ForwardEffect()
+class FastForwardEffect extends Effect {
+  FastForwardEffect()
       : super(
-          shapeProperties: ForwardAttributes(),
-          surfaceEffects: ForwardSurfaceEffect(),
-          shadowEffect: ForwardShadowEffect(),
+          shapeEffect: FastForwardAttributes(),
+          surfaceEffect: FastForwardSurfaceEffect(),
+          shadowEffect: FastForwardShadowEffect(),
         );
 }
 
-//TODO:
-class ForwardButton extends NeumorphicBuilder {
-  ForwardButton()
+class FastForwardButton extends NeumorphicBuilder {
+  FastForwardButton()
       : super(
           child: Icon(
             Icons.fast_forward_rounded,
             color: Color(0xff85878A).withOpacity(1.0),
             size: 25.0,
           ),
-          effect: ForwardEffect(),
+          effect: FastForwardEffect(),
         );
 }

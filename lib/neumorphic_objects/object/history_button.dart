@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../object_builder/neumorphic_builder.dart';
 
-class HistoryAttributes extends ShapeAttributes {
+class HistoryAttributes extends ShapeEffect {
   HistoryAttributes()
       : super(
           diameter: 45.0,
@@ -25,7 +25,7 @@ class HistorySurfaceEffect extends SurfaceEffect {
         );
 }
 
-class HistoryShadowEffect extends Shadowing {
+class HistoryShadowEffect extends ShadowEffect {
   HistoryShadowEffect()
       : super(
           shadows: [
@@ -48,8 +48,8 @@ class HistoryShadowEffect extends Shadowing {
 class HistoryEffect extends Effect {
   HistoryEffect()
       : super(
-          shapeProperties: HistoryAttributes(),
-          surfaceEffects: HistorySurfaceEffect(),
+          shapeEffect: HistoryAttributes(),
+          surfaceEffect: HistorySurfaceEffect(),
           shadowEffect: HistoryShadowEffect(),
         );
 }

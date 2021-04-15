@@ -3,7 +3,7 @@ import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-class PlayAttributes extends ShapeAttributes {
+class PlayAttributes extends ShapeEffect {
   PlayAttributes()
       : super(
           diameter: 80.0,
@@ -23,7 +23,7 @@ class PlaySurfaceEffect extends SurfaceEffect {
         );
 }
 
-class PlayShadowEffect extends Shadowing {
+class PlayShadowEffect extends ShadowEffect {
   PlayShadowEffect()
       : super(
           shadows: [
@@ -46,14 +46,14 @@ class PlayShadowEffect extends Shadowing {
 class PlayEffect extends Effect {
   PlayEffect()
       : super(
-          shapeProperties: PlayAttributes(),
-          surfaceEffects: PlaySurfaceEffect(),
+          shapeEffect: PlayAttributes(),
+          surfaceEffect: PlaySurfaceEffect(),
           shadowEffect: PlayShadowEffect(),
         );
 }
 
-class PlayButton extends NeumorphicBuilder {
-  PlayButton()
+class PausePlayButton extends NeumorphicBuilder {
+  PausePlayButton()
       : super(
           child: Icon(
             Icons.pause_rounded,
