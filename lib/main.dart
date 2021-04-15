@@ -1,9 +1,9 @@
-import 'package:bmad_ui_example/neumorphic_objects/objects/music_image.dart';
 import 'package:flutter/material.dart';
 import 'neumorphic_objects/design_element/music_app_bar.dart';
 import 'neumorphic_objects/design_element/music_details.dart';
 import 'neumorphic_objects/design_element/music_fab.dart';
 import 'neumorphic_objects/design_element/scrub_bar.dart';
+import 'neumorphic_objects/object/music_image.dart';
 
 void main() => runApp(MyApp());
 
