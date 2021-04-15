@@ -1,8 +1,7 @@
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
-
-import '../object_builder/neumorphic_builder.dart';
 
 class MenuAttributes extends ShapeEffect {
   MenuAttributes()
@@ -50,17 +49,5 @@ class MenuEffect extends Effect {
           shapeEffect: MenuAttributes(),
           surfaceEffect: MenuSurfaceEffect(),
           shadowEffect: MenuShadowEffect(),
-        );
-}
-
-class MenuButton extends NeumorphicBuilder {
-  MenuButton()
-      : super(
-          child: Icon(
-            Icons.menu_rounded,
-            color: Color(0xff818487).withOpacity(1.0),
-            size: 19.0,
-          ),
-          effect: MenuEffect(),
         );
 }

@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_builder/neumorphic_builder.dart';
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
@@ -49,17 +49,5 @@ class PlayEffect extends Effect {
           shapeEffect: PlayAttributes(),
           surfaceEffect: PlaySurfaceEffect(),
           shadowEffect: PlayShadowEffect(),
-        );
-}
-
-class PausePlayButton extends NeumorphicBuilder {
-  PausePlayButton()
-      : super(
-          child: Icon(
-            Icons.pause_rounded,
-            color: Color(0xffFFFFFF).withOpacity(1.0),
-            size: 25.0,
-          ),
-          effect: PlayEffect(),
         );
 }

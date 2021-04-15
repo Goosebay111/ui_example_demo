@@ -1,11 +1,12 @@
-import 'package:bmad_ui_example/neumorphic_objects/object/history_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/object/menu_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/components/history_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/components/menu_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MusicAppBar extends StatelessWidget {
   MusicAppBar({this.topPadding = 0});
   final double? topPadding;
+
   @override
   Widget build(BuildContext context) {
     return Padding(

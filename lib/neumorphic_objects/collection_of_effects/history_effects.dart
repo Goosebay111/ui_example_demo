@@ -1,9 +1,8 @@
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../object_builder/neumorphic_builder.dart';
 
 class HistoryAttributes extends ShapeEffect {
   HistoryAttributes()
@@ -51,17 +50,5 @@ class HistoryEffect extends Effect {
           shapeEffect: HistoryAttributes(),
           surfaceEffect: HistorySurfaceEffect(),
           shadowEffect: HistoryShadowEffect(),
-        );
-}
-
-class HistoryButton extends NeumorphicBuilder {
-  HistoryButton()
-      : super(
-          child: Icon(
-            FontAwesomeIcons.arrowLeft,
-            color: Color(0xff818487).withOpacity(1.0),
-            size: 13.0,
-          ),
-          effect: HistoryEffect(),
         );
 }

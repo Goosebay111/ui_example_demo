@@ -1,11 +1,10 @@
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-import '../object_builder/neumorphic_builder.dart';
-
-class FastForwardAttributes extends ShapeEffect {
-  FastForwardAttributes()
+class RewindAttributes extends ShapeEffect {
+  RewindAttributes()
       : super(
           diameter: 80.0,
           borderWidth: 4.0,
@@ -13,8 +12,8 @@ class FastForwardAttributes extends ShapeEffect {
         );
 }
 
-class FastForwardSurfaceEffect extends SurfaceEffect {
-  FastForwardSurfaceEffect()
+class RewindSurfaceEffect extends SurfaceEffect {
+  RewindSurfaceEffect()
       : super(
           lightSideColor: Color(0xff222429).withOpacity(1.0),
           darkSideColor: Color(0xff2F3238).withOpacity(1.0),
@@ -24,8 +23,8 @@ class FastForwardSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class FastForwardShadowEffect extends ShadowEffect {
-  FastForwardShadowEffect()
+class RewindShadowEffect extends ShadowEffect {
+  RewindShadowEffect()
       : super(
           shadows: [
             Shadow(
@@ -44,23 +43,11 @@ class FastForwardShadowEffect extends ShadowEffect {
         );
 }
 
-class FastForwardEffect extends Effect {
-  FastForwardEffect()
+class RewindEffect extends Effect {
+  RewindEffect()
       : super(
-          shapeEffect: FastForwardAttributes(),
-          surfaceEffect: FastForwardSurfaceEffect(),
-          shadowEffect: FastForwardShadowEffect(),
-        );
-}
-
-class FastForwardButton extends NeumorphicBuilder {
-  FastForwardButton()
-      : super(
-          child: Icon(
-            Icons.fast_forward_rounded,
-            color: Color(0xff85878A).withOpacity(1.0),
-            size: 25.0,
-          ),
-          effect: FastForwardEffect(),
+          shapeEffect: RewindAttributes(),
+          surfaceEffect: RewindSurfaceEffect(),
+          shadowEffect: RewindShadowEffect(),
         );
 }

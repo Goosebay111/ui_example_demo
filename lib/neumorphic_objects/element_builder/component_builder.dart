@@ -5,8 +5,8 @@ import 'icon_element.dart';
 import 'image_element.dart';
 import 'thumb_element.dart';
 
-class NeumorphicBuilder extends StatelessWidget {
-  NeumorphicBuilder(
+class ComponentBuilder extends StatelessWidget {
+  ComponentBuilder(
       {required this.effect, this.child, this.image, this.isThumb = false});
 
   @protected

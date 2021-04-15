@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ShadowEffect {
+abstract class ShadowEffect {
   ShadowEffect({required this.shadows});
 
+  @protected
   final List<Shadow> shadows;
 
   getShadows() {

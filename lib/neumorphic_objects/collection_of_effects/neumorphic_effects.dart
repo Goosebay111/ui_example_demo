@@ -1,8 +1,7 @@
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
-
-import '../object_builder/neumorphic_builder.dart';
 
 class ImageAttributes extends ShapeEffect {
   ImageAttributes()
@@ -50,13 +49,5 @@ class ImageEffect extends Effect {
           shapeEffect: ImageAttributes(),
           surfaceEffect: ImageSurfaceEffect(),
           shadowEffect: ImageShadowEffect(),
-        );
-}
-
-class NeumorphicImage extends NeumorphicBuilder {
-  NeumorphicImage()
-      : super(
-          image: AssetImage('assets/lowlife.jpg'),
-          effect: ImageEffect(),
         );
 }

@@ -1,11 +1,10 @@
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-import '../object_builder/neumorphic_builder.dart';
-
-class RewindAttributes extends ShapeEffect {
-  RewindAttributes()
+class FastForwardAttributes extends ShapeEffect {
+  FastForwardAttributes()
       : super(
           diameter: 80.0,
           borderWidth: 4.0,
@@ -13,8 +12,8 @@ class RewindAttributes extends ShapeEffect {
         );
 }
 
-class RewindSurfaceEffect extends SurfaceEffect {
-  RewindSurfaceEffect()
+class FastForwardSurfaceEffect extends SurfaceEffect {
+  FastForwardSurfaceEffect()
       : super(
           lightSideColor: Color(0xff222429).withOpacity(1.0),
           darkSideColor: Color(0xff2F3238).withOpacity(1.0),
@@ -24,8 +23,8 @@ class RewindSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class RewindShadowEffect extends ShadowEffect {
-  RewindShadowEffect()
+class FastForwardShadowEffect extends ShadowEffect {
+  FastForwardShadowEffect()
       : super(
           shadows: [
             Shadow(
@@ -44,23 +43,11 @@ class RewindShadowEffect extends ShadowEffect {
         );
 }
 
-class RewindEffect extends Effect {
-  RewindEffect()
+class FastForwardEffect extends Effect {
+  FastForwardEffect()
       : super(
-          shapeEffect: RewindAttributes(),
-          surfaceEffect: RewindSurfaceEffect(),
-          shadowEffect: RewindShadowEffect(),
-        );
-}
-
-class RewindButton extends NeumorphicBuilder {
-  RewindButton()
-      : super(
-          child: Icon(
-            Icons.fast_rewind_rounded,
-            color: Color(0xff85878A).withOpacity(1.0),
-            size: 28.0,
-          ),
-          effect: RewindEffect(),
+          shapeEffect: FastForwardAttributes(),
+          surfaceEffect: FastForwardSurfaceEffect(),
+          shadowEffect: FastForwardShadowEffect(),
         );
 }

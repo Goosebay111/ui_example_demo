@@ -33,9 +33,10 @@ abstract class SurfaceEffect {
   @protected
   final AlignmentGeometry centerAlignment;
 
+  @protected
   Color lightSideColor;
+  @protected
   Color darkSideColor;
-
   late List<Color> _gradient = [];
 
   get colorGradient => _gradient;

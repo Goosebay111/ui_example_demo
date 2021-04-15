@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_builder/neumorphic_builder.dart';
+import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +52,7 @@ class ThumbEffect extends Effect {
         );
 }
 
-class MusicThumb extends NeumorphicBuilder {
+class MusicThumb extends ComponentBuilder {
   MusicThumb()
       : super(
           isThumb: true,

@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object/neumorphic_image.dart';
+import 'package:bmad_ui_example/neumorphic_objects/components/neumorphic_image.dart';
 import 'package:flutter/material.dart';
 
 class MusicImage extends StatelessWidget {
