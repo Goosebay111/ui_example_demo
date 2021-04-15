@@ -2,22 +2,22 @@ import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-import 'object_builder/neumorphic_builder.dart';
+import '../object_builder/neumorphic_builder.dart';
 
 class MenuAttributes extends ShapeAttributes {
   MenuAttributes()
       : super(
           diameter: 45.0,
           borderWidth: 2.5,
-          borderColor: Color(0xff2E3235),
+          borderColor: Color(0xff2E3235).withOpacity(1.0),
         );
 }
 
 class MenuSurfaceEffect extends SurfaceEffect {
   MenuSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff262A2F),
-          darkSideColor: Color(0xff2C3238),
+          lightSideColor: Color(0xff262A2F).withOpacity(1.0),
+          darkSideColor: Color(0xff2C3238).withOpacity(1.0),
           focalAlignment: Alignment.bottomLeft,
           focalRadius: 1.0,
           centerAlignment: Alignment.bottomRight,
@@ -58,7 +58,7 @@ class MenuButton extends NeumorphicBuilder {
       : super(
           child: Icon(
             Icons.menu_rounded,
-            color: Color(0xff818487),
+            color: Color(0xff818487).withOpacity(1.0),
             size: 19.0,
           ),
           effect: MenuEffect(),

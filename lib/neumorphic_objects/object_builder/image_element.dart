@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ImageObject extends StatelessWidget {
-  const ImageObject({required this.size, required this.image});
+class ImageElement extends StatelessWidget {
+  const ImageElement({required this.size, required this.image});
 
   final size;
   final AssetImage? image;

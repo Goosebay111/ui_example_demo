@@ -3,22 +3,22 @@ import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'object_builder/neumorphic_builder.dart';
+import '../object_builder/neumorphic_builder.dart';
 
 class HistoryAttributes extends ShapeAttributes {
   HistoryAttributes()
       : super(
           diameter: 45.0,
           borderWidth: 2.5,
-          borderColor: Color(0xff2E3235),
+          borderColor: Color(0xff2E3235).withOpacity(1.0),
         );
 }
 
 class HistorySurfaceEffect extends SurfaceEffect {
   HistorySurfaceEffect()
       : super(
-          lightSideColor: Color(0xff262A2F),
-          darkSideColor: Color(0xff2C3238),
+          lightSideColor: Color(0xff262A2F).withOpacity(1.0),
+          darkSideColor: Color(0xff2C3238).withOpacity(1.0),
           focalAlignment: Alignment.bottomLeft,
           focalRadius: 1.0,
           centerAlignment: Alignment.bottomRight,
@@ -59,7 +59,7 @@ class HistoryButton extends NeumorphicBuilder {
       : super(
           child: Icon(
             FontAwesomeIcons.arrowLeft,
-            color: Color(0xff818487),
+            color: Color(0xff818487).withOpacity(1.0),
             size: 13.0,
           ),
           effect: HistoryEffect(),

@@ -2,10 +2,10 @@ import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
-import 'object_builder/neumorphic_builder.dart';
+import '../object_builder/neumorphic_builder.dart';
 
-class RewindAttributes extends ShapeAttributes {
-  RewindAttributes()
+class ForwardAttributes extends ShapeAttributes {
+  ForwardAttributes()
       : super(
           diameter: 80.0,
           borderWidth: 4.0,
@@ -13,19 +13,19 @@ class RewindAttributes extends ShapeAttributes {
         );
 }
 
-class RewindSurfaceEffect extends SurfaceEffect {
-  RewindSurfaceEffect()
+class ForwardSurfaceEffect extends SurfaceEffect {
+  ForwardSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff222429),
-          darkSideColor: Color(0xff2F3238),
+          lightSideColor: Color(0xff222429).withOpacity(1.0),
+          darkSideColor: Color(0xff2F3238).withOpacity(1.0),
           focalAlignment: Alignment.topLeft,
           focalRadius: 1.1,
           centerAlignment: Alignment.centerLeft,
         );
 }
 
-class RewindShadowEffect extends Shadowing {
-  RewindShadowEffect()
+class ForwardShadowEffect extends Shadowing {
+  ForwardShadowEffect()
       : super(
           shadows: [
             Shadow(
@@ -44,23 +44,24 @@ class RewindShadowEffect extends Shadowing {
         );
 }
 
-class RewindEffect extends Effect {
-  RewindEffect()
+class ForwardEffect extends Effect {
+  ForwardEffect()
       : super(
-          shapeProperties: RewindAttributes(),
-          surfaceEffects: RewindSurfaceEffect(),
-          shadowEffect: RewindShadowEffect(),
+          shapeProperties: ForwardAttributes(),
+          surfaceEffects: ForwardSurfaceEffect(),
+          shadowEffect: ForwardShadowEffect(),
         );
 }
 
-class RewindButton extends NeumorphicBuilder {
-  RewindButton()
+//TODO:
+class ForwardButton extends NeumorphicBuilder {
+  ForwardButton()
       : super(
           child: Icon(
-            Icons.fast_rewind_rounded,
-            color: Color(0xff85878A),
-            size: 28.0,
+            Icons.fast_forward_rounded,
+            color: Color(0xff85878A).withOpacity(1.0),
+            size: 25.0,
           ),
-          effect: RewindEffect(),
+          effect: ForwardEffect(),
         );
 }

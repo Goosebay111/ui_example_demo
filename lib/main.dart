@@ -1,13 +1,9 @@
-import 'package:bmad_ui_example/neumorphic_objects/fast_forward_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/music_image.dart';
-import 'package:bmad_ui_example/neumorphic_objects/menu_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/history_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/pause_play_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/rewind_button.dart';
-import 'package:bmad_ui_example/neumorphic_scrubber/music_scrubber.dart';
-import 'package:bmad_ui_example/neumorphic_scrubber/scrubber_thumb.dart';
+import 'package:bmad_ui_example/neumorphic_objects/objects/music_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'neumorphic_objects/design_element/music_app_bar.dart';
+import 'neumorphic_objects/design_element/music_details.dart';
+import 'neumorphic_objects/design_element/music_fab.dart';
+import 'neumorphic_objects/design_element/scrub_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -57,132 +53,15 @@ class Home extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: 30.0),
           MusicAppBar(),
-          SizedBox(height: 40),
+          SizedBox(height: 40.0),
           MusicImage(),
-          SizedBox(height: 40),
+          SizedBox(height: 40.0),
           MusicDetails(),
           SizedBox(height: 40.0),
           ScrubBar(),
           SizedBox(height: 80.0),
           MusicFloatingActionButton(),
         ],
-      ),
-    );
-  }
-}
-
-class MusicDetails extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          'Low Life',
-          style: GoogleFonts.prompt(
-              letterSpacing: 1.0,
-              fontSize: 30.0,
-              color: Color(0xffA7A8AB),
-              fontWeight: FontWeight.w400),
-        ),
-        Text(
-          'Future ft. The Weeknd',
-          style: GoogleFonts.prompt(
-              fontSize: 14.5,
-              color: Color(0xff727477),
-              fontWeight: FontWeight.w400),
-        ),
-      ],
-    );
-  }
-}
-
-class ScrubBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      child: Stack(
-        children: [
-          Row(
-            children: [
-              SizedBox(width: 30),
-              Text(
-                '1:17',
-                style: GoogleFonts.prompt(
-                    fontSize: 10.5,
-                    color: Color(0xff77787B),
-                    fontWeight: FontWeight.w700),
-              ),
-              Spacer(),
-              Text(
-                '2:46',
-                style: GoogleFonts.prompt(
-                    fontSize: 10.5,
-                    color: Color(0xff77787B),
-                    fontWeight: FontWeight.w700),
-              ),
-              SizedBox(width: 30),
-            ],
-          ),
-          Positioned(
-            top: 20,
-            child: MusicScrubber(),
-          ),
-          Positioned(
-            left: 170,
-            top: 6,
-            child: MusicThumb(),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class MusicFloatingActionButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(width: 30),
-        RewindButton(),
-        Spacer(),
-        PlayButton(),
-        Spacer(),
-        ForwardButton(),
-        SizedBox(width: 30),
-      ],
-    );
-  }
-}
-
-class MusicAppBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(width: 30),
-        HistoryButton(),
-        Spacer(),
-        PlayStatus(),
-        Spacer(),
-        MenuButton(),
-        SizedBox(width: 35.0),
-      ],
-    );
-  }
-}
-
-class PlayStatus extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      'PLAYING NOW',
-      style: GoogleFonts.prompt(
-        fontSize: 12,
-        color: Color(0xff818487),
-        fontWeight: FontWeight.w600,
-        letterSpacing: 0.9,
       ),
     );
   }

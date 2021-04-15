@@ -1,8 +1,7 @@
-// https://stackoverflow.com/questions/56928862/flutter-rounded-rectangle-border-with-different-colours-for-each-side/56935434#56935434
 import 'package:flutter/material.dart';
 import 'package:vector_math/vector_math.dart' as vector;
 
-//paint the 4 borders different colors, with changeable angle highlights at the corners.
+///Paint the cardinal edges 4 borders different colors, with modifiable highlight angles at the corners.
 
 class EdgePainter extends CustomPainter {
   final Color? leftBorderColor;

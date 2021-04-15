@@ -1,9 +1,9 @@
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:flutter/material.dart';
 
-import 'icon_object.dart';
-import 'image_object.dart';
-import 'thumb_object.dart';
+import 'icon_element.dart';
+import 'image_element.dart';
+import 'thumb_element.dart';
 
 class NeumorphicBuilder extends StatelessWidget {
   NeumorphicBuilder(
@@ -23,9 +23,9 @@ class NeumorphicBuilder extends StatelessWidget {
       height: size,
       child: Stack(
         children: <Widget>[
-          if (isThumb != false) ThumbObject(size: size),
-          if (image != null) ImageObject(size: size, image: image),
-          if (child != null) IconObject(child: child),
+          if (isThumb != false) ThumbElement(size: size),
+          if (image != null) ImageElement(size: size, image: image),
+          if (child != null) IconElement(child: child),
         ],
       ),
       decoration: effect.getDecoration(),

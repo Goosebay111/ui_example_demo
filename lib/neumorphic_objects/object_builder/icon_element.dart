@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class IconObject extends StatelessWidget {
-  const IconObject({required this.child});
+class IconElement extends StatelessWidget {
+  const IconElement({required this.child});
 
   final Widget? child;
 
