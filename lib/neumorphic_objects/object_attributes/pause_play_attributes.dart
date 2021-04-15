@@ -42,12 +42,3 @@ class PlayShadowEffect extends ShadowEffect {
           ],
         );
 }
-
-class PlayEffect extends Effect {
-  PlayEffect()
-      : super(
-          shapeEffect: PlayAttributes(),
-          surfaceEffect: PlaySurfaceEffect(),
-          shadowEffect: PlayShadowEffect(),
-        );
-}

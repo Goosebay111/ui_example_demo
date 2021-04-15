@@ -2,9 +2,10 @@ import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_bui
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class MenuAttributes extends ShapeEffect {
-  MenuAttributes()
+class HistoryAttributes extends ShapeEffect {
+  HistoryAttributes()
       : super(
           diameter: 45.0,
           borderWidth: 2.5,
@@ -12,8 +13,8 @@ class MenuAttributes extends ShapeEffect {
         );
 }
 
-class MenuSurfaceEffect extends SurfaceEffect {
-  MenuSurfaceEffect()
+class HistorySurfaceEffect extends SurfaceEffect {
+  HistorySurfaceEffect()
       : super(
           lightSideColor: Color(0xff262A2F).withOpacity(1.0),
           darkSideColor: Color(0xff2C3238).withOpacity(1.0),
@@ -23,8 +24,8 @@ class MenuSurfaceEffect extends SurfaceEffect {
         );
 }
 
-class MenuShadowEffect extends ShadowEffect {
-  MenuShadowEffect()
+class HistoryShadowEffect extends ShadowEffect {
+  HistoryShadowEffect()
       : super(
           shadows: [
             Shadow(
@@ -40,14 +41,5 @@ class MenuShadowEffect extends ShadowEffect {
               spreadSize: 2.0,
             )
           ],
-        );
-}
-
-class MenuEffect extends Effect {
-  MenuEffect()
-      : super(
-          shapeEffect: MenuAttributes(),
-          surfaceEffect: MenuSurfaceEffect(),
-          shadowEffect: MenuShadowEffect(),
         );
 }

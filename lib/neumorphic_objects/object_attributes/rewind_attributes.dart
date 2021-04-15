@@ -42,12 +42,3 @@ class RewindShadowEffect extends ShadowEffect {
           ],
         );
 }
-
-class RewindEffect extends Effect {
-  RewindEffect()
-      : super(
-          shapeEffect: RewindAttributes(),
-          surfaceEffect: RewindSurfaceEffect(),
-          shadowEffect: RewindShadowEffect(),
-        );
-}

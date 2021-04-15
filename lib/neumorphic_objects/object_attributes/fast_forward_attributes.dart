@@ -42,12 +42,3 @@ class FastForwardShadowEffect extends ShadowEffect {
           ],
         );
 }
-
-class FastForwardEffect extends Effect {
-  FastForwardEffect()
-      : super(
-          shapeEffect: FastForwardAttributes(),
-          surfaceEffect: FastForwardSurfaceEffect(),
-          shadowEffect: FastForwardShadowEffect(),
-        );
-}

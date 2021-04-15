@@ -42,12 +42,3 @@ class ImageShadowEffect extends ShadowEffect {
           ],
         );
 }
-
-class ImageEffect extends Effect {
-  ImageEffect()
-      : super(
-          shapeEffect: ImageAttributes(),
-          surfaceEffect: ImageSurfaceEffect(),
-          shadowEffect: ImageShadowEffect(),
-        );
-}
