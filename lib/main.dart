@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: MusicPlayer(),
       ),
@@ -46,7 +47,7 @@ class MusicPlayer extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          MusicAppBar(topPadding: 20.0),
+          MusicAppBar(topPadding: 30.0),
           MusicImage(topPadding: 40.0),
           MusicDetails(topPadding: 40.0),
           ScrubBar(topPadding: 40.0),

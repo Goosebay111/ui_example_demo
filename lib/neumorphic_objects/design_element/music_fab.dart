@@ -12,13 +12,13 @@ class MusicFloatingActionButton extends StatelessWidget {
       padding: EdgeInsets.only(top: topPadding!),
       child: Row(
         children: [
-          SizedBox(width: 30.0),
+          SizedBox(width: 50.0),
           RewindButton(),
           Spacer(),
           PausePlayButton(),
           Spacer(),
           FastForwardButton(),
-          SizedBox(width: 30.0),
+          SizedBox(width: 50.0),
         ],
       ),
     );
