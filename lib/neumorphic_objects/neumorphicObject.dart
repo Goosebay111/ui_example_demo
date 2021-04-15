@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class NeumorphicObject extends StatelessWidget {
   NeumorphicObject(
-      {this.image, this.child, required this.effect, this.isThumb = false});
+      {required this.effect, this.child, this.image, this.isThumb = false});
 
-  final String? image;
-  final Widget? child;
   final Effect effect;
+  final Widget? child;
+  final String? image;
   final bool? isThumb;
 
   @override
@@ -17,33 +17,14 @@ class NeumorphicObject extends StatelessWidget {
     return Container(
       width: size,
       height: size,
-      child: Object(child: child, image: image, size: size, isThumb: isThumb),
+      child: Stack(
+        children: <Widget>[
+          if (isThumb != false) ThumbObject(size: size),
+          if (image != null) ImageObject(size: size, image: image),
+          if (child != null) IconObject(child: child),
+        ],
+      ),
       decoration: effect.getDecoration(),
-    );
-  }
-}
-
-class Object extends StatelessWidget {
-  const Object({
-    required this.child,
-    required this.image,
-    required this.size,
-    required this.isThumb,
-  });
-
-  final Widget? child;
-  final String? image;
-  final double size;
-  final bool? isThumb;
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        if (child != null) IconObject(child: child),
-        if (isThumb == true) ThumbObject(size: size),
-        if (image != null) ImageObject(size: size, image: image),
-      ],
     );
   }
 }
