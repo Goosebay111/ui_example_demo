@@ -1,6 +1,6 @@
 import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
-import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
+import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
+import 'package:bmad_ui_example/ui_properties/shadow_effects.dart';
 import 'package:flutter/material.dart';
 
 class ThumbAttributes extends ShapeEffect {

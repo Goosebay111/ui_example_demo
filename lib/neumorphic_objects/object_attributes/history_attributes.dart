@@ -1,8 +1,6 @@
-import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
-import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
+import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
+import 'package:bmad_ui_example/ui_properties/shadow_effects.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HistoryAttributes extends ShapeEffect {
   HistoryAttributes()
