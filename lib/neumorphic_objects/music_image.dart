@@ -55,7 +55,7 @@ class ImageEffect extends Effect {
 class MusicImage extends NeumorphicObject {
   MusicImage()
       : super(
-          image: 'assets/lowlife.jpg',
+          image: AssetImage('assets/lowlife.jpg'),
           effect: ImageEffect(),
         );
 }

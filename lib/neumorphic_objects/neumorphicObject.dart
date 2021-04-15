@@ -7,7 +7,7 @@ class NeumorphicObject extends StatelessWidget {
 
   final Effect effect;
   final Widget? child;
-  final String? image;
+  final AssetImage? image;
   final bool? isThumb;
 
   @override
@@ -67,13 +67,13 @@ class ImageObject extends StatelessWidget {
   const ImageObject({required this.size, required this.image});
 
   final size;
-  final String? image;
+  final AssetImage? image;
 
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
       radius: size / 2,
-      backgroundImage: AssetImage(image!),
+      backgroundImage: image,
     );
   }
 }
