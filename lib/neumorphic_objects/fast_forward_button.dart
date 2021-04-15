@@ -1,7 +1,8 @@
-import 'package:bmad_ui_example/neumorphic_objects/neumorphicObject.dart';
 import 'package:bmad_ui_example/ui_effects/objectProperties.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:flutter/material.dart';
+
+import 'object_builder/neumorphic_builder.dart';
 
 class ForwardAttributes extends ShapeAttributes {
   ForwardAttributes()
@@ -53,7 +54,7 @@ class ForwardEffect extends Effect {
 }
 
 //TODO:
-class ForwardButton extends NeumorphicObject {
+class ForwardButton extends NeumorphicBuilder {
   ForwardButton()
       : super(
           child: Icon(
