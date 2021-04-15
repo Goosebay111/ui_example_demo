@@ -1,9 +1,9 @@
+import 'package:bmad_ui_example/neumorphic_objects/design_element/music_image.dart';
 import 'package:flutter/material.dart';
 import 'neumorphic_objects/design_element/music_app_bar.dart';
 import 'neumorphic_objects/design_element/music_details.dart';
 import 'neumorphic_objects/design_element/music_fab.dart';
 import 'neumorphic_objects/design_element/scrub_bar.dart';
-import 'neumorphic_objects/object/music_image.dart';
 
 void main() => runApp(MyApp());
 
@@ -51,16 +51,11 @@ class Home extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          SizedBox(height: 30.0),
-          MusicAppBar(),
-          SizedBox(height: 40.0),
-          MusicImage(),
-          SizedBox(height: 40.0),
-          MusicDetails(),
-          SizedBox(height: 40.0),
-          ScrubBar(),
-          SizedBox(height: 80.0),
-          MusicFloatingActionButton(),
+          MusicAppBar(topPadding: 20.0),
+          MusicImage(topPadding: 40.0),
+          MusicDetails(topPadding: 40.0),
+          ScrubBar(topPadding: 40.0),
+          MusicFloatingActionButton(topPadding: 80.0),
         ],
       ),
     );

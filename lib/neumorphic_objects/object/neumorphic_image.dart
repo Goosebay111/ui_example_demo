@@ -53,8 +53,8 @@ class ImageEffect extends Effect {
         );
 }
 
-class MusicImage extends NeumorphicBuilder {
-  MusicImage()
+class NeumorphicImage extends NeumorphicBuilder {
+  NeumorphicImage()
       : super(
           image: AssetImage('assets/lowlife.jpg'),
           effect: ImageEffect(),

@@ -4,18 +4,23 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MusicAppBar extends StatelessWidget {
+  MusicAppBar({this.topPadding = 0});
+  final double? topPadding;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(width: 30.0),
-        HistoryButton(),
-        Spacer(),
-        PlayStatus(),
-        Spacer(),
-        MenuButton(),
-        SizedBox(width: 35.0),
-      ],
+    return Padding(
+      padding: EdgeInsets.only(top: topPadding!),
+      child: Row(
+        children: [
+          SizedBox(width: 30.0),
+          HistoryButton(),
+          Spacer(),
+          PlayStatus(),
+          Spacer(),
+          MenuButton(),
+          SizedBox(width: 35.0),
+        ],
+      ),
     );
   }
 }
