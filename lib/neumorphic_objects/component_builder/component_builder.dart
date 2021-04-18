@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
+import 'package:bmad_ui_example/ui_effects/effect_Collection.dart';
 import 'package:flutter/material.dart';
 import 'features/icon_element.dart';
 import 'features/image_element.dart';

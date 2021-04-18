@@ -1,5 +1,6 @@
-import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
-import 'package:bmad_ui_example/ui_properties/shadow_effects.dart';
+import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
+import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
+import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
 class ImageAttributes extends ShapeEffect {
