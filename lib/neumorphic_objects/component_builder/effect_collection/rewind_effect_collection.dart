@@ -1,8 +1,8 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_attributes/rewind_attributes.dart';
+import 'package:bmad_ui_example/neumorphic_objects/component_attributes/rewind_attributes.dart';
 import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
 
-class RewindEffect extends Effect {
-  RewindEffect()
+class RewindEffectCollection extends EffectCollection {
+  RewindEffectCollection()
       : super(
           shapeEffect: RewindAttributes(),
           surfaceEffect: RewindSurfaceEffect(),

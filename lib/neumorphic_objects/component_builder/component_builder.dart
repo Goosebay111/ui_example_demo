@@ -1,15 +1,18 @@
 import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
 import 'package:flutter/material.dart';
-import 'icon_element.dart';
-import 'image_element.dart';
-import 'thumb_element.dart';
+import 'features/icon_element.dart';
+import 'features/image_element.dart';
+import 'features/thumb_element.dart';
 
 abstract class ComponentBuilder extends StatelessWidget {
   ComponentBuilder(
-      {required this.effect, this.child, this.image, this.isThumb = false});
+      {required this.decorations,
+      this.child,
+      this.image,
+      this.isThumb = false});
 
   @protected
-  final Effect effect;
+  final EffectCollection decorations;
   @protected
   final Widget? child;
   @protected
@@ -19,19 +22,19 @@ abstract class ComponentBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double size = effect.size;
+    final double size = decorations.size;
 
     return Container(
       width: size,
       height: size,
       child: Stack(
         children: <Widget>[
-          if (isThumb != false) ThumbElement(size: size),
-          if (image != null) ImageElement(size: size, image: image),
-          if (child != null) IconElement(child: child),
+          if (isThumb != false) ThumbFeature(size: size),
+          if (image != null) ImageFeature(size: size, image: image),
+          if (child != null) IconFeature(child: child),
         ],
       ),
-      decoration: effect.getDecoration(),
+      decoration: decorations.getDecoration(),
     );
   }
 }

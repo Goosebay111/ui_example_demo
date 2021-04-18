@@ -42,8 +42,8 @@ abstract class SurfaceEffect {
   get colorGradient => _gradient;
 }
 
-abstract class Effect {
-  Effect(
+abstract class EffectCollection {
+  EffectCollection(
       {required this.shapeEffect,
       required this.surfaceEffect,
       required this.shadowEffect});

@@ -43,8 +43,8 @@ class ThumbShadowEffect extends ShadowEffect {
         );
 }
 
-class ThumbEffect extends Effect {
-  ThumbEffect()
+class ThumbEffectCollection extends EffectCollection {
+  ThumbEffectCollection()
       : super(
           shapeEffect: ThumbAttributes(),
           surfaceEffect: ThumbSurfaceEffect(),

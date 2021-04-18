@@ -1,8 +1,8 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_attributes/image_attributes.dart';
+import 'package:bmad_ui_example/neumorphic_objects/component_attributes/image_attributes.dart';
 import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
 
-class ImageEffect extends Effect {
-  ImageEffect()
+class ImageEffectCollection extends EffectCollection {
+  ImageEffectCollection()
       : super(
           shapeEffect: ImageAttributes(),
           surfaceEffect: ImageSurfaceEffect(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ThumbElement extends StatelessWidget {
-  const ThumbElement({required this.size});
+class ThumbFeature extends StatelessWidget {
+  const ThumbFeature({required this.size});
 
   final size;
 

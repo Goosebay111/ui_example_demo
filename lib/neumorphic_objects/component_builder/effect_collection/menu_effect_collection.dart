@@ -1,8 +1,8 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_attributes/menu_attributes.dart';
+import 'package:bmad_ui_example/neumorphic_objects/component_attributes/menu_attributes.dart';
 import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
 
-class MenuEffect extends Effect {
-  MenuEffect()
+class MenuEffectCollection extends EffectCollection {
+  MenuEffectCollection()
       : super(
           shapeEffect: MenuAttributes(),
           surfaceEffect: MenuSurfaceEffect(),
