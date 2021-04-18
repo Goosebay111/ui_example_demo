@@ -14,11 +14,11 @@ class MenuAttributes extends ShapeEffect {
 class MenuSurfaceEffect extends SurfaceEffect {
   MenuSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff262A2F).withOpacity(1.0),
-          darkSideColor: Color(0xff2C3238).withOpacity(1.0),
-          focalAlignment: Alignment.bottomLeft,
-          focalRadius: 1.0,
-          centerAlignment: Alignment.bottomRight,
+          color1: Color(0xff262A2F).withOpacity(1.0),
+          color2: Color(0xff2C3238).withOpacity(1.0),
+          focal: Alignment.bottomLeft,
+          radius: 1.0,
+          centre: Alignment.bottomRight,
         );
 }
 

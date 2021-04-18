@@ -1,4 +1,3 @@
-import 'package:bmad_ui_example/neumorphic_objects/element_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_properties/objectProperties.dart';
 import 'package:bmad_ui_example/ui_properties/shadow_effects.dart';
 import 'package:flutter/material.dart';
@@ -15,11 +14,12 @@ class ThumbAttributes extends ShapeEffect {
 class ThumbSurfaceEffect extends SurfaceEffect {
   ThumbSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff2A2F35).withOpacity(1.0),
-          darkSideColor: Color(0xff070707).withOpacity(1.0),
-          focalAlignment: Alignment.topLeft,
-          focalRadius: 1.2,
-          centerAlignment: Alignment.bottomCenter,
+          color1: Color(0xff2A2A35).withOpacity(1.0),
+          color2: Color(0xff070707)
+              .withOpacity(1.0), //Color(0xff2A2F35).withOpacity(1.0),
+          focal: Alignment.center,
+          radius: 1.0,
+          centre: Alignment.center,
         );
 }
 
@@ -49,13 +49,5 @@ class ThumbEffect extends Effect {
           shapeEffect: ThumbAttributes(),
           surfaceEffect: ThumbSurfaceEffect(),
           shadowEffect: ThumbShadowEffect(),
-        );
-}
-
-class MusicThumb extends ComponentBuilder {
-  MusicThumb()
-      : super(
-          isThumb: true,
-          effect: ThumbEffect(),
         );
 }

@@ -14,11 +14,11 @@ class ImageAttributes extends ShapeEffect {
 class ImageSurfaceEffect extends SurfaceEffect {
   ImageSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff222429).withOpacity(1.0),
-          darkSideColor: Color(0xff2F3238).withOpacity(1.0),
-          focalAlignment: Alignment.bottomLeft,
-          focalRadius: 0.0,
-          centerAlignment: Alignment.bottomRight,
+          color1: Color(0xff222429).withOpacity(1.0),
+          color2: Color(0xff2F3238).withOpacity(1.0),
+          focal: Alignment.bottomLeft,
+          radius: 0.0,
+          centre: Alignment.bottomRight,
         );
 }
 

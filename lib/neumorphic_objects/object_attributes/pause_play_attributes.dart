@@ -14,11 +14,11 @@ class PlayAttributes extends ShapeEffect {
 class PlaySurfaceEffect extends SurfaceEffect {
   PlaySurfaceEffect()
       : super(
-          lightSideColor: Color(0xffEA5E06).withOpacity(1.0),
-          darkSideColor: Color(0xffBC2911).withOpacity(1.0),
-          focalAlignment: Alignment.bottomCenter,
-          focalRadius: 0.89,
-          centerAlignment: Alignment.centerRight,
+          color1: Color(0xffEA5E06).withOpacity(1.0),
+          color2: Color(0xffBC2911).withOpacity(1.0),
+          focal: Alignment.bottomCenter,
+          radius: 0.89,
+          centre: Alignment.centerRight,
         );
 }
 

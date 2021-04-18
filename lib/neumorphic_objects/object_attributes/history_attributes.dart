@@ -14,11 +14,12 @@ class HistoryAttributes extends ShapeEffect {
 class HistorySurfaceEffect extends SurfaceEffect {
   HistorySurfaceEffect()
       : super(
-          lightSideColor: Color(0xff262A2F).withOpacity(1.0),
-          darkSideColor: Color(0xff2C3238).withOpacity(1.0),
-          focalAlignment: Alignment.bottomLeft,
-          focalRadius: 1.0,
-          centerAlignment: Alignment.bottomRight,
+          color1: Color(0xff262A2F)
+              .withOpacity(1.0), // Color(0xff2C3238).withOpacity(1.0),
+          color2: Color(0xff2C3238).withOpacity(1.0),
+          focal: Alignment.bottomLeft,
+          radius: 1.1,
+          centre: Alignment.bottomRight,
         );
 }
 

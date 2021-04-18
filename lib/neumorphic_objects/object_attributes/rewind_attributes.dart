@@ -14,11 +14,11 @@ class RewindAttributes extends ShapeEffect {
 class RewindSurfaceEffect extends SurfaceEffect {
   RewindSurfaceEffect()
       : super(
-          lightSideColor: Color(0xff222429).withOpacity(1.0),
-          darkSideColor: Color(0xff2F3238).withOpacity(1.0),
-          focalAlignment: Alignment.topLeft,
-          focalRadius: 1.1,
-          centerAlignment: Alignment.centerLeft,
+          color1: Color(0xff222429).withOpacity(1.0),
+          color2: Color(0xff2F3238).withOpacity(1.0),
+          focal: Alignment.topLeft,
+          radius: 1.1,
+          centre: Alignment.centerLeft,
         );
 }
 

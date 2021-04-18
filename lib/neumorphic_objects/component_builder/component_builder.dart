@@ -4,7 +4,7 @@ import 'icon_element.dart';
 import 'image_element.dart';
 import 'thumb_element.dart';
 
-class ComponentBuilder extends StatelessWidget {
+abstract class ComponentBuilder extends StatelessWidget {
   ComponentBuilder(
       {required this.effect, this.child, this.image, this.isThumb = false});
 

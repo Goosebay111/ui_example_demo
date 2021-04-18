@@ -18,25 +18,25 @@ abstract class ShapeEffect {
 
 abstract class SurfaceEffect {
   SurfaceEffect(
-      {required this.lightSideColor,
-      required this.darkSideColor,
-      required this.focalAlignment,
-      required this.focalRadius,
-      required this.centerAlignment}) {
-    _gradient.add(lightSideColor);
-    _gradient.add(darkSideColor);
+      {required this.color1,
+      required this.color2,
+      required this.focal,
+      required this.radius,
+      required this.centre}) {
+    _gradient.add(color1);
+    _gradient.add(color2);
   }
   @protected
-  final Alignment focalAlignment;
+  final Alignment focal;
   @protected
-  final double focalRadius;
+  final double radius;
   @protected
-  final AlignmentGeometry centerAlignment;
+  final AlignmentGeometry centre;
 
   @protected
-  Color lightSideColor;
+  Color color1;
   @protected
-  Color darkSideColor;
+  Color color2;
   late List<Color> _gradient = [];
 
   get colorGradient => _gradient;
@@ -60,9 +60,10 @@ abstract class Effect {
     return BoxDecoration(
       gradient: RadialGradient(
         colors: surfaceEffect.colorGradient,
-        radius: surfaceEffect.focalRadius,
-        focal: surfaceEffect.focalAlignment,
-        center: surfaceEffect.centerAlignment,
+        radius: surfaceEffect.radius,
+        focal: surfaceEffect.focal,
+        center: surfaceEffect.centre,
+        // tileMode: TileMode.mirror,
       ),
       borderRadius: BorderRadius.all(Radius.circular(shapeEffect.size / 2)),
       border: Border.all(
