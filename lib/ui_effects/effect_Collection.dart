@@ -3,7 +3,7 @@ import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
 import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-abstract class EffectCollection {
+class EffectCollection {
   EffectCollection(
       {required this.shapeEffect,
       required this.surfaceEffect,

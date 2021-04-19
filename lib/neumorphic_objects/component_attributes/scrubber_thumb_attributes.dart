@@ -1,4 +1,3 @@
-import 'package:bmad_ui_example/ui_effects/effect_Collection.dart';
 import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
 import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
 import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
@@ -9,16 +8,15 @@ class ThumbAttributes extends ShapeEffect {
       : super(
           diameter: 30.0,
           borderWidth: 2.0,
-          borderColor: Color(0xff2A2F35).withOpacity(0.5),
+          borderColor: Color(0xff2E3439).withOpacity(0.4),
         );
 }
 
 class ThumbSurfaceEffect extends SurfaceEffect {
   ThumbSurfaceEffect()
       : super(
-          color1: Color(0xff2A2A35).withOpacity(1.0),
-          color2: Color(0xff070707)
-              .withOpacity(1.0), //Color(0xff2A2F35).withOpacity(1.0),
+          color1: Color(0xff22262B).withOpacity(1.0),
+          color2: Color(0xff2B2F35).withOpacity(1.0),
           focal: Alignment.center,
           radius: 1.0,
           centre: Alignment.center,
@@ -42,14 +40,5 @@ class ThumbShadowEffect extends ShadowEffect {
               spreadSize: 0.0,
             )
           ],
-        );
-}
-
-class ThumbEffectCollection extends EffectCollection {
-  ThumbEffectCollection()
-      : super(
-          shapeEffect: ThumbAttributes(),
-          surfaceEffect: ThumbSurfaceEffect(),
-          shadowEffect: ThumbShadowEffect(),
         );
 }
