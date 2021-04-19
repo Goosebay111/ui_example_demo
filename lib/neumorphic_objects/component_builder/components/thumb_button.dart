@@ -2,8 +2,8 @@ import 'package:bmad_ui_example/neumorphic_objects/component_attributes/scrubber
 import 'package:bmad_ui_example/neumorphic_objects/component_builder/component_builder.dart';
 import 'package:bmad_ui_example/ui_effects/effect_Collection.dart';
 
-class MusicThumb extends ComponentBuilder {
-  MusicThumb()
+class ThumbButton extends ComponentBuilder {
+  ThumbButton()
       : super(
           isThumb: true,
           decorations: EffectCollection(
