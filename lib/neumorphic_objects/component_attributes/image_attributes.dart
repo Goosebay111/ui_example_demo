@@ -28,13 +28,13 @@ class ImageShadowEffect extends ShadowEffect {
       : super(
           shadows: [
             Shadow(
-              color: Color(0xff3E434A).withOpacity(1.0),
-              translateBy: TranslateBy(x: -16.0, y: -16.0),
+              color: Color(0xff3E434A).withOpacity(0.85),
+              translateBy: TranslateBy(x: -10.0, y: -30.0),
               blurSize: 15.0,
               spreadSize: 0.0,
             ),
             Shadow(
-              color: Color(0xff1D1F22).withOpacity(0.9),
+              color: Color(0xff1D1F22).withOpacity(1.0),
               translateBy: TranslateBy(x: 10.0, y: 20.0),
               blurSize: 12.0,
               spreadSize: 7.0,

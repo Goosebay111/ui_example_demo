@@ -46,11 +46,11 @@ class MusicPlayer extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          MusicAppBar(topPadding: 30.0),
-          MusicImage(topPadding: 30.0),
+          MusicAppBar(topPadding: 35.0),
+          MusicImage(topPadding: 35.0),
           MusicDetails(topPadding: 30.0),
-          ScrubBar(topPadding: 40.0),
-          MusicFloatingActionButton(topPadding: 80.0),
+          ScrubBar(topPadding: 45.0),
+          MusicFloatingActionButton(topPadding: 75.0),
         ],
       ),
     );

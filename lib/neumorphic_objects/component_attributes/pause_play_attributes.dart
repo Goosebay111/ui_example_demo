@@ -34,7 +34,7 @@ class PlayShadowEffect extends ShadowEffect {
               spreadSize: 5.0,
             ),
             Shadow(
-              color: Color(0xff272d31).withOpacity(1.0),
+              color: Color(0xff272d31).withOpacity(0.5),
               translateBy: TranslateBy(x: -8.0, y: -8.0),
               blurSize: 7.0,
               spreadSize: 4.0,

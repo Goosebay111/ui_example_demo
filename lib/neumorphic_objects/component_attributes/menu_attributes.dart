@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class MenuAttributes extends ShapeEffect {
   MenuAttributes()
       : super(
-          diameter: 45.0,
+          diameter: 50.0,
           borderWidth: 2.5,
           borderColor: Color(0xff2E3235).withOpacity(1.0),
         );
