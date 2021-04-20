@@ -35,7 +35,7 @@ class ImageShadowEffect extends ShadowEffect {
             ),
             Shadow(
               color: Color(0xff1D1F22).withOpacity(1.0),
-              translateBy: TranslateBy(x: 10.0, y: 20.0),
+              translateBy: TranslateBy(x: 10.0, y: 10.0),
               blurSize: 12.0,
               spreadSize: 7.0,
             )
