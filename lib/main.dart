@@ -30,7 +30,6 @@ class MusicPlayer extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            //Colors.red,
             Color(0xFF393D41),
             Color(0xFF393D41),
             Color(0xFF32353A),

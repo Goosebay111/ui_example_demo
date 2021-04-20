@@ -3,8 +3,8 @@ import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
 import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class HistoryAttributes extends ShapeEffect {
-  HistoryAttributes()
+class HistoryButtonAttributes extends ShapeEffect {
+  HistoryButtonAttributes()
       : super(
           diameter: 45.0,
           borderWidth: 2.5,
@@ -12,11 +12,10 @@ class HistoryAttributes extends ShapeEffect {
         );
 }
 
-class HistorySurfaceEffect extends SurfaceEffect {
-  HistorySurfaceEffect()
+class HistoryButtonSurfaceEffect extends SurfaceEffect {
+  HistoryButtonSurfaceEffect()
       : super(
-          color1: Color(0xff262A2F)
-              .withOpacity(1.0), // Color(0xff2C3238).withOpacity(1.0),
+          color1: Color(0xff262A2F).withOpacity(1.0),
           color2: Color(0xff2C3238).withOpacity(1.0),
           focal: Alignment.bottomLeft,
           radius: 1.1,
@@ -24,8 +23,8 @@ class HistorySurfaceEffect extends SurfaceEffect {
         );
 }
 
-class HistoryShadowEffect extends ShadowEffect {
-  HistoryShadowEffect()
+class HistoryButtonShadowEffect extends ShadowEffect {
+  HistoryButtonShadowEffect()
       : super(
           shadows: [
             Shadow(
