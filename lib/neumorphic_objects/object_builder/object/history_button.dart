@@ -3,7 +3,7 @@ import 'package:bmad_ui_example/neumorphic_objects/attributes/history_attributes
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../component_builder.dart';
+import '../object_builder.dart';
 
 class HistoryButton extends ComponentBuilder {
   HistoryButton()
