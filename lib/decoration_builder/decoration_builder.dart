@@ -8,11 +8,9 @@ class DecorationBuilder {
       {required this.borderEffect,
       required this.surfaceEffect,
       required this.shadowEffect});
-  @protected
+
   final BorderEffect borderEffect;
-  @protected
   final SurfaceEffect surfaceEffect;
-  @protected
   final ShadowEffect shadowEffect;
 
   double get size => borderEffect.size;
