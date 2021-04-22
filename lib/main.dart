@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'neumorphic_objects/design_elements/music_app_bar.dart';
-import 'neumorphic_objects/design_elements/music_details.dart';
-import 'neumorphic_objects/design_elements/music_fab.dart';
-import 'neumorphic_objects/design_elements/music_image.dart';
-import 'neumorphic_objects/design_elements/scrub_bar.dart';
+
+import 'neumorphic_objects/ui_arrangements/music_app_bar.dart';
+import 'neumorphic_objects/ui_arrangements/music_details.dart';
+import 'neumorphic_objects/ui_arrangements/music_fab.dart';
+import 'neumorphic_objects/ui_arrangements/music_image.dart';
+import 'neumorphic_objects/ui_arrangements/scrub_bar.dart';
 
 void main() => runApp(MyApp());
 
