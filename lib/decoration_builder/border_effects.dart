@@ -13,7 +13,9 @@ abstract class BorderEffect {
   final Color borderColor;
 
   double get size => diameter;
+
+  Border get border => Border.all(width: borderWidth, color: borderColor);
+
   BorderRadius get borderRadius =>
       BorderRadius.all(Radius.circular(diameter / 2));
-  Border get border => Border.all(width: borderWidth, color: borderColor);
 }
