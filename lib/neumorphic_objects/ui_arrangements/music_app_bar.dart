@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_builder/features/play_status.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/details/play_status.dart';
 import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/history_button.dart';
 import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/menu_button.dart';
 import 'package:flutter/material.dart';

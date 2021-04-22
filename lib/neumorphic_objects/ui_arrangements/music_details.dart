@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_builder/features/song_info.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/details/song_info.dart';
 import 'package:flutter/material.dart';
 
 class MusicDetails extends StatelessWidget {
