@@ -15,9 +15,9 @@ class DecorationBuilder {
   @protected
   final ShadowEffect shadowEffect;
 
-  get size => borderEffect.size;
+  double get size => borderEffect.size;
 
-  get boxDecoration => BoxDecoration(
+  BoxDecoration get boxDecoration => BoxDecoration(
         gradient: surfaceEffect.radialGradient,
         borderRadius: borderEffect.borderRadius,
         border: borderEffect.border,
