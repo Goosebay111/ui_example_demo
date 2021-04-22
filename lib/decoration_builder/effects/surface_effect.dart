@@ -7,15 +7,15 @@ abstract class SurfaceEffect {
       required this.focal,
       required this.radius,
       required this.center});
-
+  @protected
   final Alignment focal;
-
+  @protected
   final double radius;
-
+  @protected
   final AlignmentGeometry center;
-
+  @protected
   Color color1;
-
+  @protected
   Color color2;
 
   RadialGradient get radialGradient => RadialGradient(
