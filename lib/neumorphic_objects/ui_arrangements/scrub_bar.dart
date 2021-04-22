@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/thumb_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/objects/thumb_button.dart';
 import 'package:bmad_ui_example/neumorphic_scrubber/music_scrubber.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
