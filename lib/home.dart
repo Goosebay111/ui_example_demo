@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'neumorphic_objects/object_builder/constants/gradientBackGround.dart';
+import 'constants/background_gradient.dart';
 import 'ui_arrangements/music_app_bar.dart';
 import 'ui_arrangements/music_details.dart';
 import 'ui_arrangements/music_fab.dart';
@@ -13,13 +13,7 @@ class MusicPlayer extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: linearBackGround,
-        ),
-      ),
+      decoration: linearBackGround,
       child: Column(
         children: <Widget>[
           MusicAppBar(topPadding: 35.0),
