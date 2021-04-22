@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
 
-class RewindButton extends ComponentBuilder {
+class RewindButton extends ObjectBuilder {
   RewindButton()
       : super(
           child: Icon(

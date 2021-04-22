@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
 
-class FastForwardButton extends ComponentBuilder {
+class FastForwardButton extends ObjectBuilder {
   FastForwardButton()
       : super(
           child: Icon(

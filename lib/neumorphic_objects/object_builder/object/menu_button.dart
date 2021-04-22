@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
 
-class MenuButton extends ComponentBuilder {
+class MenuButton extends ObjectBuilder {
   MenuButton()
       : super(
           child: Icon(

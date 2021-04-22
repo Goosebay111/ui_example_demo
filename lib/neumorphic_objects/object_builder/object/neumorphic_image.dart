@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
 
-class NeumorphicImage extends ComponentBuilder {
+class NeumorphicImage extends ObjectBuilder {
   NeumorphicImage()
       : super(
           image: AssetImage('assets/lowlife.jpg'),

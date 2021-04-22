@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
 
-class PausePlayButton extends ComponentBuilder {
+class PausePlayButton extends ObjectBuilder {
   PausePlayButton()
       : super(
           child: Icon(

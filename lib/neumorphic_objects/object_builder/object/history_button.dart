@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../object_builder.dart';
 
-class HistoryButton extends ComponentBuilder {
+class HistoryButton extends ObjectBuilder {
   HistoryButton()
       : super(
           child: Icon(

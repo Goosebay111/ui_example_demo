@@ -4,8 +4,8 @@ import 'features/icon_widget.dart';
 import 'features/image_widget.dart';
 import 'features/thumb_widget.dart';
 
-abstract class ComponentBuilder extends StatelessWidget {
-  ComponentBuilder(
+abstract class ObjectBuilder extends StatelessWidget {
+  ObjectBuilder(
       {required this.decorations,
       this.child,
       this.image,
