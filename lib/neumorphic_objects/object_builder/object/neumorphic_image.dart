@@ -9,7 +9,7 @@ class NeumorphicImage extends ComponentBuilder {
       : super(
           image: AssetImage('assets/lowlife.jpg'),
           decorations: DecorationBuilder(
-            borderEffect: ImageAttributes(),
+            borderEffect: ImageBorderEffect(),
             surfaceEffect: ImageSurfaceEffect(),
             shadowEffect: ImageShadowEffect(),
           ),

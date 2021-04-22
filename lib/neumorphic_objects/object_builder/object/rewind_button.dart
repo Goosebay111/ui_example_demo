@@ -13,7 +13,7 @@ class RewindButton extends ComponentBuilder {
             size: 28.0,
           ),
           decorations: DecorationBuilder(
-            borderEffect: RewindAttributes(),
+            borderEffect: RewindBorderEffect(),
             surfaceEffect: RewindSurfaceEffect(),
             shadowEffect: RewindShadowEffect(),
           ),

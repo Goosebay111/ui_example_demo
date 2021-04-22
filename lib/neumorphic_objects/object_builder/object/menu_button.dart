@@ -13,7 +13,7 @@ class MenuButton extends ComponentBuilder {
             size: 19.0,
           ),
           decorations: DecorationBuilder(
-            borderEffect: MenuAttributes(),
+            borderEffect: MenuBorderEffect(),
             surfaceEffect: MenuSurfaceEffect(),
             shadowEffect: MenuShadowEffect(),
           ),

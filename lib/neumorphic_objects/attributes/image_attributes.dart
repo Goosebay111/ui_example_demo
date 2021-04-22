@@ -3,8 +3,8 @@ import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
 import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class ImageAttributes extends BorderEffect {
-  ImageAttributes()
+class ImageBorderEffect extends BorderEffect {
+  ImageBorderEffect()
       : super(
           diameter: 300,
           borderWidth: 9.0,

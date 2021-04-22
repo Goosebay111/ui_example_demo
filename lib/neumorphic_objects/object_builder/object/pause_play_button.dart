@@ -13,7 +13,7 @@ class PausePlayButton extends ComponentBuilder {
             size: 25.0,
           ),
           decorations: DecorationBuilder(
-            borderEffect: PlayAttributes(),
+            borderEffect: PlayBorderEffect(),
             surfaceEffect: PlaySurfaceEffect(),
             shadowEffect: PlayShadowEffect(),
           ),

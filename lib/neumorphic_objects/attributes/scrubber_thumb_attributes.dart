@@ -3,8 +3,8 @@ import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
 import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class ThumbAttributes extends BorderEffect {
-  ThumbAttributes()
+class ThumbBorderEffect extends BorderEffect {
+  ThumbBorderEffect()
       : super(
           diameter: 30.0,
           borderWidth: 2.0,

@@ -14,7 +14,7 @@ class HistoryButton extends ComponentBuilder {
             size: 13.0,
           ),
           decorations: DecorationBuilder(
-            borderEffect: HistoryButtonAttributes(),
+            borderEffect: HistoryButtonBorderEffect(),
             surfaceEffect: HistoryButtonSurfaceEffect(),
             shadowEffect: HistoryButtonShadowEffect(),
           ),

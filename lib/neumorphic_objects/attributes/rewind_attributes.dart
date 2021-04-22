@@ -3,8 +3,8 @@ import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
 import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class RewindAttributes extends BorderEffect {
-  RewindAttributes()
+class RewindBorderEffect extends BorderEffect {
+  RewindBorderEffect()
       : super(
           diameter: 80.0,
           borderWidth: 4.0,
