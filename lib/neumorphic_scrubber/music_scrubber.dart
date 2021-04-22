@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/neumorphic_scrubber/edge_highlighting.dart';
+import 'package:bmad_ui_example/neumorphic_scrubber/edge_painter.dart';
 import 'package:flutter/material.dart';
 
 class MusicScrubber extends StatelessWidget {
