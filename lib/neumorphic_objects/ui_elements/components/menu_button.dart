@@ -1,6 +1,6 @@
 import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
 import 'package:bmad_ui_example/neumorphic_objects/component_attributes/menu_attributes.dart';
-import 'package:bmad_ui_example/neumorphic_objects/component_builder/component_builder.dart';
+import 'package:bmad_ui_example/neumorphic_objects/ui_elements/component_builder.dart';
 import 'package:flutter/material.dart';
 
 class MenuButton extends ComponentBuilder {
