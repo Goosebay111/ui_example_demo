@@ -1,6 +1,6 @@
-import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
-import 'package:bmad_ui_example/decoration_builder/border_effects.dart';
-import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
 class DecorationBuilder {

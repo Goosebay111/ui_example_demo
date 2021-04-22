@@ -1,8 +1,9 @@
 import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
-import 'package:bmad_ui_example/neumorphic_objects/component_attributes/history_attributes.dart';
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/component_builder.dart';
+import 'package:bmad_ui_example/neumorphic_objects/attributes/history_attributes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../component_builder.dart';
 
 class HistoryButton extends ComponentBuilder {
   HistoryButton()

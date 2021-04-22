@@ -1,5 +1,5 @@
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/components/history_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/components/menu_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/history_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/menu_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

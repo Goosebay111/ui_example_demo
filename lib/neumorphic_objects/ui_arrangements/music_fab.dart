@@ -1,6 +1,6 @@
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/components/fast_forward_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/components/pause_play_button.dart';
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/components/rewind_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/fast_forward_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/pause_play_button.dart';
+import 'package:bmad_ui_example/neumorphic_objects/object_builder/object/rewind_button.dart';
 import 'package:flutter/material.dart';
 
 class MusicFloatingActionButton extends StatelessWidget {

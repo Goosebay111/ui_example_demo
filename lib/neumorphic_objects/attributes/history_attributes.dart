@@ -1,10 +1,10 @@
-import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
-import 'package:bmad_ui_example/decoration_builder/border_effects.dart';
-import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class MenuAttributes extends BorderEffect {
-  MenuAttributes()
+class HistoryButtonAttributes extends BorderEffect {
+  HistoryButtonAttributes()
       : super(
           diameter: 50.0,
           borderWidth: 2.5,
@@ -12,19 +12,19 @@ class MenuAttributes extends BorderEffect {
         );
 }
 
-class MenuSurfaceEffect extends SurfaceEffect {
-  MenuSurfaceEffect()
+class HistoryButtonSurfaceEffect extends SurfaceEffect {
+  HistoryButtonSurfaceEffect()
       : super(
           color1: Color(0xff262A2F).withOpacity(1.0),
           color2: Color(0xff2C3238).withOpacity(1.0),
           focal: Alignment.bottomLeft,
-          radius: 1.0,
+          radius: 1.1,
           center: Alignment.bottomRight,
         );
 }
 
-class MenuShadowEffect extends ShadowEffect {
-  MenuShadowEffect()
+class HistoryButtonShadowEffect extends ShadowEffect {
+  HistoryButtonShadowEffect()
       : super(
           shadows: [
             BoxShadow(

@@ -1,7 +1,8 @@
 import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
-import 'package:bmad_ui_example/neumorphic_objects/component_attributes/image_attributes.dart';
-import 'package:bmad_ui_example/neumorphic_objects/ui_elements/component_builder.dart';
+import 'package:bmad_ui_example/neumorphic_objects/attributes/image_attributes.dart';
 import 'package:flutter/material.dart';
+
+import '../component_builder.dart';
 
 class NeumorphicImage extends ComponentBuilder {
   NeumorphicImage()
