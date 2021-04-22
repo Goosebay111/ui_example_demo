@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class PlayStatus extends StatelessWidget {
   const PlayStatus();
+
   @override
   Widget build(BuildContext context) {
     return Text(

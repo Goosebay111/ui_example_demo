@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SongInfo extends StatelessWidget {
-  const SongInfo({
-    Key? key,
-  }) : super(key: key);
+  const SongInfo();
 
   @override
   Widget build(BuildContext context) {
