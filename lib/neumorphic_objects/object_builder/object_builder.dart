@@ -1,9 +1,9 @@
 import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
 import 'package:flutter/material.dart';
 
-import 'details/icon_widget.dart';
-import 'details/image_widget.dart';
-import 'details/thumb_widget.dart';
+import 'constants/icon_widget.dart';
+import 'constants/image_widget.dart';
+import 'constants/thumb_widget.dart';
 
 abstract class ObjectBuilder extends StatelessWidget {
   ObjectBuilder(
