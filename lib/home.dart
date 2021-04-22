@@ -13,7 +13,7 @@ class MusicPlayer extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      decoration: linearBackGround,
+      decoration: LinearBackGround().boxDecoration,
       child: Column(
         children: <Widget>[
           MusicAppBar(topPadding: 35.0),
