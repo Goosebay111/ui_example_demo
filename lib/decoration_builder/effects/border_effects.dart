@@ -5,11 +5,11 @@ abstract class BorderEffect {
       {required this.diameter,
       required this.borderWidth,
       required this.borderColor});
-
+  @protected
   final double diameter;
-
+  @protected
   final double borderWidth;
-
+  @protected
   final Color borderColor;
 
   double get size => diameter;
