@@ -1,10 +1,10 @@
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
-import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
-import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/shape_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class EffectCollection {
-  EffectCollection(
+class DecorationBuilder {
+  DecorationBuilder(
       {required this.shapeEffect,
       required this.surfaceEffect,
       required this.shadowEffect});
@@ -19,13 +19,7 @@ class EffectCollection {
 
   BoxDecoration getDecoration() {
     return BoxDecoration(
-      gradient: RadialGradient(
-        colors: surfaceEffect.colorGradient,
-        radius: surfaceEffect.radius,
-        focal: surfaceEffect.focal,
-        center: surfaceEffect.centre,
-        // tileMode: TileMode.mirror,
-      ),
+      gradient: surfaceEffect.getRadialGradient(),
       borderRadius: BorderRadius.all(Radius.circular(shapeEffect.size / 2)),
       border: Border.all(
         width: shapeEffect.borderWidth,

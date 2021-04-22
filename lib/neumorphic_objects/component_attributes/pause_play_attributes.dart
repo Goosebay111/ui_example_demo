@@ -1,6 +1,6 @@
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
-import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
-import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/shape_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
 import 'package:flutter/material.dart';
 
 class PlayAttributes extends ShapeEffect {
@@ -19,7 +19,7 @@ class PlaySurfaceEffect extends SurfaceEffect {
           color2: Color(0xffBC2911).withOpacity(1.0),
           focal: Alignment.bottomCenter,
           radius: 0.89,
-          centre: Alignment.centerRight,
+          center: Alignment.centerRight,
         );
 }
 
@@ -27,17 +27,17 @@ class PlayShadowEffect extends ShadowEffect {
   PlayShadowEffect()
       : super(
           shadows: [
-            Shadow(
+            BoxShadow(
               color: Color(0xff171717).withOpacity(1.0),
-              translateBy: TranslateBy(x: 15.0, y: 15.0),
-              blurSize: 8.0,
-              spreadSize: 5.0,
+              offset: Offset(15.0, 15.0),
+              blurRadius: 8.0,
+              spreadRadius: 5.0,
             ),
-            Shadow(
+            BoxShadow(
               color: Color(0xff272d31).withOpacity(0.5),
-              translateBy: TranslateBy(x: -8.0, y: -8.0),
-              blurSize: 7.0,
-              spreadSize: 4.0,
+              offset: Offset(-8.0, -8.0),
+              blurRadius: 7.0,
+              spreadRadius: 4.0,
             )
           ],
         );

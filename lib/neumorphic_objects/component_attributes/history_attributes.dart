@@ -1,6 +1,6 @@
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
-import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
-import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/shape_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
 import 'package:flutter/material.dart';
 
 class HistoryButtonAttributes extends ShapeEffect {
@@ -19,7 +19,7 @@ class HistoryButtonSurfaceEffect extends SurfaceEffect {
           color2: Color(0xff2C3238).withOpacity(1.0),
           focal: Alignment.bottomLeft,
           radius: 1.1,
-          centre: Alignment.bottomRight,
+          center: Alignment.bottomRight,
         );
 }
 
@@ -27,17 +27,17 @@ class HistoryButtonShadowEffect extends ShadowEffect {
   HistoryButtonShadowEffect()
       : super(
           shadows: [
-            Shadow(
+            BoxShadow(
               color: Color(0xff262A2F).withOpacity(0.7),
-              translateBy: TranslateBy(x: 4.0, y: 4.0),
-              blurSize: 4.0,
-              spreadSize: 3.0,
+              offset: Offset(4.0, 4.0),
+              blurRadius: 4.0,
+              spreadRadius: 3.0,
             ),
-            Shadow(
+            BoxShadow(
               color: Color(0xff3E434A).withOpacity(1.0),
-              translateBy: TranslateBy(x: -6.0, y: -6.0),
-              blurSize: 8.0,
-              spreadSize: 2.0,
+              offset: Offset(-6.0, -6.0),
+              blurRadius: 8.0,
+              spreadRadius: 2.0,
             )
           ],
         );

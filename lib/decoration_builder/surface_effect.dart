@@ -6,21 +6,24 @@ abstract class SurfaceEffect {
       required this.color2,
       required this.focal,
       required this.radius,
-      required this.centre}) {
-    _gradient.add(color1);
-    _gradient.add(color2);
-  }
+      required this.center});
 
   final Alignment focal;
 
   final double radius;
 
-  final AlignmentGeometry centre;
+  final AlignmentGeometry center;
 
   Color color1;
 
   Color color2;
-  late List<Color> _gradient = [];
 
-  get colorGradient => _gradient;
+  RadialGradient getRadialGradient() {
+    return RadialGradient(
+      colors: [color1, color2],
+      focal: focal,
+      center: center,
+      radius: radius,
+    );
+  }
 }

@@ -1,6 +1,6 @@
-import 'package:bmad_ui_example/ui_effects/shadow_effects.dart';
-import 'package:bmad_ui_example/ui_effects/shape_effects.dart';
-import 'package:bmad_ui_example/ui_effects/surface_effect.dart';
+import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/shape_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
 import 'package:flutter/material.dart';
 
 class ThumbAttributes extends ShapeEffect {
@@ -19,7 +19,7 @@ class ThumbSurfaceEffect extends SurfaceEffect {
           color2: Color(0xff2B2F35).withOpacity(1.0),
           focal: Alignment.center,
           radius: 1.0,
-          centre: Alignment.center,
+          center: Alignment.center,
         );
 }
 
@@ -27,17 +27,17 @@ class ThumbShadowEffect extends ShadowEffect {
   ThumbShadowEffect()
       : super(
           shadows: [
-            Shadow(
+            BoxShadow(
               color: Colors.transparent,
-              translateBy: TranslateBy(x: 0.0, y: 0.0),
-              blurSize: 0.0,
-              spreadSize: 0.0,
+              offset: Offset(0.0, 0.0),
+              blurRadius: 0.0,
+              spreadRadius: 0.0,
             ),
-            Shadow(
+            BoxShadow(
               color: Colors.transparent,
-              translateBy: TranslateBy(x: 0.0, y: 0.0),
-              blurSize: 0.0,
-              spreadSize: 0.0,
+              offset: Offset(0.0, 0.0),
+              blurRadius: 0.0,
+              spreadRadius: 0.0,
             )
           ],
         );

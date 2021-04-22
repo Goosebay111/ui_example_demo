@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/ui_effects/effect_Collection.dart';
+import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
 import 'package:flutter/material.dart';
 import 'features/icon_element.dart';
 import 'features/image_element.dart';
@@ -12,7 +12,7 @@ abstract class ComponentBuilder extends StatelessWidget {
       this.isThumb = false});
 
   @protected
-  final EffectCollection decorations;
+  final DecorationBuilder decorations;
   @protected
   final Widget? child;
   @protected
