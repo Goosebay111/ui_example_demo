@@ -7,7 +7,7 @@ class ThumbButton extends ComponentBuilder {
       : super(
           isThumb: true,
           decorations: DecorationBuilder(
-            shapeEffect: ThumbAttributes(),
+            borderEffect: ThumbAttributes(),
             surfaceEffect: ThumbSurfaceEffect(),
             shadowEffect: ThumbShadowEffect(),
           ),

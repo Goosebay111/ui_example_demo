@@ -6,7 +6,5 @@ abstract class ShadowEffect {
   @protected
   final List<BoxShadow> shadows;
 
-  List<BoxShadow> getShadows() {
-    return shadows;
-  }
+  List<BoxShadow> get boxShadows => shadows;
 }

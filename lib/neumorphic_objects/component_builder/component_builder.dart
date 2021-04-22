@@ -34,7 +34,7 @@ abstract class ComponentBuilder extends StatelessWidget {
           if (child != null) IconFeature(child: child),
         ],
       ),
-      decoration: decorations.getDecoration(),
+      decoration: decorations.boxDecoration,
     );
   }
 }

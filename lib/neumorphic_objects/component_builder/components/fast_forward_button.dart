@@ -12,7 +12,7 @@ class FastForwardButton extends ComponentBuilder {
             size: 25.0,
           ),
           decorations: DecorationBuilder(
-            shapeEffect: FastForwardAttributes(),
+            borderEffect: FastForwardAttributes(),
             surfaceEffect: FastForwardSurfaceEffect(),
             shadowEffect: FastForwardShadowEffect(),
           ),

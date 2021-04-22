@@ -18,12 +18,10 @@ abstract class SurfaceEffect {
 
   Color color2;
 
-  RadialGradient getRadialGradient() {
-    return RadialGradient(
-      colors: [color1, color2],
-      focal: focal,
-      center: center,
-      radius: radius,
-    );
-  }
+  get radialGradient => RadialGradient(
+        colors: [color1, color2],
+        focal: focal,
+        center: center,
+        radius: radius,
+      );
 }

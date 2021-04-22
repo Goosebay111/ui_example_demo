@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-abstract class ShapeEffect {
-  ShapeEffect(
+abstract class BorderEffect {
+  BorderEffect(
       {required this.diameter,
       required this.borderWidth,
       required this.borderColor});
@@ -13,4 +13,6 @@ abstract class ShapeEffect {
   final Color borderColor;
 
   get size => diameter;
+  get borderRadius => BorderRadius.all(Radius.circular(diameter / 2));
+  get border => Border.all(width: borderWidth, color: borderColor);
 }

@@ -1,9 +1,9 @@
 import 'package:bmad_ui_example/decoration_builder/shadow_effects.dart';
-import 'package:bmad_ui_example/decoration_builder/shape_effects.dart';
+import 'package:bmad_ui_example/decoration_builder/border_effects.dart';
 import 'package:bmad_ui_example/decoration_builder/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class HistoryButtonAttributes extends ShapeEffect {
+class HistoryButtonAttributes extends BorderEffect {
   HistoryButtonAttributes()
       : super(
           diameter: 50.0,
