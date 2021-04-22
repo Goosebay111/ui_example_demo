@@ -3,14 +3,16 @@ import 'package:bmad_ui_example/decoration_builder/effects/border_effects.dart';
 import 'package:bmad_ui_example/decoration_builder/effects/surface_effect.dart';
 import 'package:flutter/material.dart';
 
-class DecorationBuilder {
+abstract class DecorationBuilder {
   DecorationBuilder(
       {required this.borderEffect,
       required this.surfaceEffect,
       required this.shadowEffect});
-
+  @protected
   final BorderEffect borderEffect;
+  @protected
   final SurfaceEffect surfaceEffect;
+  @protected
   final ShadowEffect shadowEffect;
 
   double get size => borderEffect.size;

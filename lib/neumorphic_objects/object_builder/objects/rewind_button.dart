@@ -1,21 +1,12 @@
-import 'package:bmad_ui_example/decoration_builder/decoration_builder.dart';
-import 'package:bmad_ui_example/neumorphic_objects/attributes/rewind_attributes.dart';
-import 'package:flutter/material.dart';
+import 'package:bmad_ui_example/constants/rewind_icon.dart';
+import 'package:bmad_ui_example/decoration_builder/decorations/rewind_decoration.dart';
 
 import '../object_builder.dart';
 
 class RewindButton extends ObjectBuilder {
   RewindButton()
       : super(
-          child: Icon(
-            Icons.fast_rewind_rounded,
-            color: Color(0xff85878A).withOpacity(1.0),
-            size: 28.0,
-          ),
-          decorations: DecorationBuilder(
-            borderEffect: RewindBorderEffect(),
-            surfaceEffect: RewindSurfaceEffect(),
-            shadowEffect: RewindShadowEffect(),
-          ),
+          child: RewindIcon(),
+          decorations: RewindDecoration(),
         );
 }
