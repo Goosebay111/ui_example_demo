@@ -1,4 +1,4 @@
-import 'package:bmad_ui_example/decoration_builder/decorations/neumorphic_decoration.dart';
+import 'package:bmad_ui_example/decoration_builder/decorations/image_decoration.dart';
 import 'package:flutter/material.dart';
 
 import '../object_builder.dart';
